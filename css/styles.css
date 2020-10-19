@@ -79,6 +79,11 @@ input {
     height: 40px;
 }
 
+input:focus {
+    outline: none;
+    border: 1px solid #4d6988;
+}
+
 ::placeholder {
     font-weight: 100;
     font-style: italic;
@@ -95,9 +100,23 @@ select {
     border-radius: 4px;
 }
 
+.statenames {
+    font-size: 10px;
+    font-weight: 100;
+    color: #909ba5;
+}
+
 label[for="zip"] {
     display: flex;
 }
+
+input#zip {
+    width: 40%;
+}
+
+
+/*-- Newsletter Styling --*/
+
 
 .newsletter {
     display: flex;
@@ -117,7 +136,67 @@ input[type=checkbox], input[type=radio] {
     margin-right: 10px;
 }
 
+textarea {
+    background: #eff0f1;
+    border: none;
+    border-radius: 4px;
+    height: 80px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: #6cb9b4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+footer {
+    font-size: 10px;
+    font-style: italic;
+    color: #909ba5;
+    text-align: center;
+}
+
 /*--- Media Queries ---*/
 @media (min-width: 769px) {
+
+    .lrg {
+        width: 600px;
+        margin: auto;
+    }
+ 
+    label,
+    input,
+    select {
+        display: inline-block;
+    }
+
+    label {
+        width: 130px;
+    }
+
+    input, 
+    select {
+        width: 70%;
+    }
+
+    .news_select,
+    .news_extras {
+        width: auto;
+    }
+    
+    textarea {
+        width: 100%;
+    }
+
+
+    button {
+        width: 100px;
+    }
 
 }

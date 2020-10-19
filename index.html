@@ -11,34 +11,34 @@
 <body>
     <h1>The Code Review</h1>
 
+    <div class="lrg">
     <header>
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
     </header>
 
     <form>
-
         <fieldset>
-        <legend><span class="contact">Contact Information</span></legend>
+            <legend><span class="contact">Contact Information</span></legend>
 
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="user_name" placeholder="Required">
+                <label for="name">Full Name</label>
+                <input required type="text" id="name" name="user_name" placeholder="Required">
 
-            <label for="email">Email Address</label>
-            <input type="text" id="email" name="user_email" placeholder="Required">
+                <label for="email">Email Address</label>
+                <input required type="text" id="email" name="user_email" placeholder="Required">
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="user_phone">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="user_phone" placeholder="(xxx)xxx-xxxx">
 
-            <label for="address">Street Adress</label>
-            <input type="text" id="address" name="user_address">
+                <label for="address">Street Adress</label>
+                <input type="text" id="address" name="user_address">
 
-            <label for="city">City</label>
-            <input type="text" id="city" name="user_city">
+                <label for="city">City</label>
+                <input type="text" id="city" name="user_city">
 
-            <label for="state">State</label> 
-            <select name="state" id="state"> <!-- State select list from https://gist.github.com/pusherman/3145761 -->
-                <option value="" selected="selected">Choose State</option>
+                <label for="state">State</label> 
+                <select name="state" id="state"> <!-- State select list from https://gist.github.com/pusherman/3145761 -->
+                <option value="" selected="selected" class="statenames">Choose State</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -90,29 +90,28 @@
                 <option value="WV">West Virginia</option>
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
-            </select>
+                </select>
 
-            <label for="zip">Zip Code</label>
-            <input type="text" id="zip" name="user_zip">
-
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="user_zip">
         </fieldset>
     </form>
 
     <form>
         <fieldset>
-         <legend><span class="newsletter">Newsletter</span></legend>
+            <legend><span class="newsletter">Newsletter</span></legend>
 
-            <label class="news_select">Select the newsletters you would like to receive</label><br>
-            <input type="checkbox" id="htmlnews" value="newsletter_htmlnews" name="user_newsletter"><label for="htmlnews">HTML News</label><br>
-            <input type="checkbox" id="cssnews" value="newsletter_cssnews" name="user_newsletter"><label for="cssnews">CSS News</label><br>
-            <input type="checkbox" id="jsnews" value="newsletter_jsnews" name="user_newsletter"><label for="jsnews">Javascript News</label><br>
+                <label class="news_select">Select the newsletters you would like to receive</label><br>
+                <input type="checkbox" id="htmlnews" value="newsletter_htmlnews" name="user_newsletter"><label for="htmlnews">HTML News</label><br>
+                <input type="checkbox" id="cssnews" value="newsletter_cssnews" name="user_newsletter"><label for="cssnews">CSS News</label><br>
+                <input type="checkbox" id="jsnews" value="newsletter_jsnews" name="user_newsletter"><label for="jsnews">Javascript News</label><br>
 
-            <label>Newsletter Format</label><br>
-            <input type="radio" id="h_format" value="h_format" name="news_format"><label for="h_format">HTML</label><br>
-            <input type="radio" id="p_format" value="p_format" name="news_format"><label for="p_format">Plain text</label><br>
+                <label>Newsletter Format</label><br>
+                <input type="radio" id="h_format" value="h_format" name="news_format"><label for="h_format">HTML</label><br>
+                <input type="radio" id="p_format" value="p_format" name="news_format"><label for="p_format">Plain text</label><br>
 
-            <label for="extras">Other topics you'd like to hear about</label>
-            <textarea id="extras" name="user_extras"></textarea>
+                <label class="news_extras" for="extras">Other topics you'd like to hear about</label>
+                <textarea id="extras" name="user_extras"></textarea>
 
         </fieldset>
 
@@ -120,5 +119,6 @@
     </form>
 
     <footer>Copyright The Code Review</footer>
+    </div>
 </body>
 </html> 
