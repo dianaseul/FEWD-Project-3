@@ -169,11 +169,37 @@ footer {
         width: 600px;
         margin: auto;
     }
- 
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+        margin-bottom: 0;
+        margin-top: 60px;
+    }
+
+    .lrg p {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    form {
+        padding-top: 30px;
+    }
+
+    .contact {
+        font-size: 18px;
+    }
+
     label,
     input,
     select {
         display: inline-block;
+        font-size: 14px;
+        font-weight: 400;
+        color: #4d5d6e;
     }
 
     label {
@@ -183,20 +209,40 @@ footer {
     input, 
     select {
         width: 70%;
+        height: 50px;
+        opacity: 80%;
+    }
+
+    ::placeholder {
+        font-size: 12px;
     }
 
     .news_select,
+    .news_form,
     .news_extras {
         width: auto;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .newsletter {
+        font-size: 19px;
     }
     
+   .news_extras {
+       margin-top: 20px;
+   }
+
     textarea {
         width: 100%;
+        margin-top: 0;
+        height: 100px;
     }
 
 
     button {
         width: 100px;
+        height: 60px;
     }
 
 }
