@@ -18,23 +18,23 @@
     </header>
 
     <form>
-        <fieldset>
+        <fieldset class="upper">
             <legend><span class="contact">Contact Information</span></legend>
 
                 <label for="name">Full Name</label>
                 <input required type="text" id="name" name="user_name" placeholder="Required">
 
                 <label for="email">Email Address</label>
-                <input required type="text" id="email" name="user_email" placeholder="Required">
+                <input required type="email" id="email" name="user_email" placeholder="Required">
 
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="user_phone" placeholder="(xxx)xxx-xxxx">
 
-                <label for="address">Street Adress</label>
-                <input type="text" id="address" name="user_address">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="user_address" placeholder="123 Abc Way">
 
                 <label for="city">City</label>
-                <input type="text" id="city" name="user_city">
+                <input type="text" id="city" name="user_city" placeholder="Your city/town">
 
                 <label for="state">State</label> 
                 <select name="state" id="state"> <!-- State select list from https://gist.github.com/pusherman/3145761 -->
@@ -92,12 +92,10 @@
                 <option value="WY">Wyoming</option>
                 </select>
 
-                <label for="zip">Zip Code</label>
-                <input type="text" id="zip" name="user_zip">
+                <label class="zip" for="zip">Zip Code</label>
+                <input type="text" id="zip" name="user_zip" placeholder="12345">
         </fieldset>
-    </form>
 
-    <form>
         <fieldset>
             <legend><span class="newsletter">Newsletter</span></legend>
 
