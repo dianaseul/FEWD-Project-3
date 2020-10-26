@@ -1,5 +1,5 @@
 * {
-    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -42,6 +42,7 @@ header {
 h2 {
     text-align: center;
     font-size: 16px;
+    font-weight: 500;
     color: #2d3944;
     margin: 0;
     padding-top: 30px;
@@ -49,7 +50,7 @@ h2 {
 
 header p {
     font-size: 12px;
-    font-weight: 100;
+    font-weight: 300;
     color: #a4a9ae;
     margin-bottom: 30px;
 }
@@ -90,7 +91,7 @@ fieldset {
 label {
     color: #2d3944;
     font-size: 12px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 input {
@@ -124,12 +125,14 @@ select {
     border: none;
     background: #fff;
     border-radius: 4px;
+    opacity: .7;
+    font-size: 10px;
+    color: #2d3944;
+    font-style: italic;
 }
 
-.statenames {
+option[class="statenames"] {
     font-size: 10px;
-    font-weight: 100;
-    color: #909ba5;
 }
 
 label[for="zip"] {
@@ -154,7 +157,7 @@ input#zip {
     font-weight: bold;
 }
 
-.news_select {
+.news_select, {
     margin: 20px 0;
 }
 
@@ -178,6 +181,7 @@ textarea {
     border-radius: 4px;
     height: 80px;
     resize: none;
+    opacity: .7;
 }
 
 button[type="submit"] {
@@ -197,7 +201,7 @@ footer {
     font-style: italic;
     color: #909ba5;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 /*------- Media Queries -------*/
@@ -250,7 +254,7 @@ footer {
 
     input, 
     select {
-        width: calc(100% - 134px);
+        width: calc(100% - 136px);
         height: 50px;
     }
     
