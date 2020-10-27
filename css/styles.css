@@ -5,7 +5,6 @@
 body {
     background-image: url('../img/background.jpg');
     background-size: cover;
-    background-repeat: none;
 }
 
 .lrg {
@@ -35,7 +34,6 @@ header, form, footer {
 /*------- Header Styling --------*/
 header {
     text-align: center;
-    padding: 20px none;
     border-bottom: 3px solid #2d3944;
 }
 
@@ -157,7 +155,7 @@ input#zip {
     font-weight: bold;
 }
 
-.news_select, {
+.news_select {
     margin: 20px 0;
 }
 
