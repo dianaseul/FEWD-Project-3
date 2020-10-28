@@ -108,6 +108,7 @@ textarea:focus {
     border: 1px solid #4d6988;
     transform: scale(1.05);
     opacity: .9;
+    transition: all 500ms;
 }
 
 ::placeholder {
